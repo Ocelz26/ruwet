@@ -5,6 +5,7 @@ ulang:
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("white","                 BUAT YONGKY DAN SHARI         \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
