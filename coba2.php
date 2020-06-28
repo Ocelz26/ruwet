@@ -12,8 +12,7 @@ echo color("white","                  Format Kode 62*** \n");
 //        $nama = "pontjo roger";
 //echo "$nama \n";
 echo color("white"," NAMA ANDA  : ");
-$input_nama = fopen(“php://stdin”,“r”);
-$nama = trim(fgets($input_nama));
+$nama = trim(fgets(STDIN));
 
 		   $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 echo "$email \n";
