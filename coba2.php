@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "function2.php";
 ulang:
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
