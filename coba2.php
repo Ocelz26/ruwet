@@ -11,7 +11,7 @@ echo color("white","                  Format Kode 62*** \n");
 //        $nama = nama();
 //        $nama = "pontjo roger";
 //echo "$nama \n";
-echo “MASUKAN NAMA : “;
+echo color("white"," NAMA ANDA  : ");
 $input_nama = fopen(“php://stdin”,“r”);
 $nama = trim(fgets($input_nama));
 
