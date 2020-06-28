@@ -12,7 +12,7 @@ echo color("white","                  Format Kode 62*** \n");
 echo $nama ;
 echo " " ;
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-echo $email \n;
+echo $email ;
 echo " " ;
         echo color("white"," NOMOR  : ");
         // $no = trim(fgets(STDIN));
