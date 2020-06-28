@@ -5,15 +5,14 @@ ulang:
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                 BUAT YONGKY DAN SAHRI         \n");
-echo color("white","          NGEDORNYA JANGAN BANYAK-BANYAK YA... \n");
-echo color("white","                  Format Kode 62*** \n");
+echo color("red","    BUAT YONGKY DAN SAHRI         \n");
+echo color("white"," NGEDORNYA JANGAN BANYAK YA... \n");
+echo color("white"," INGAT TEMANNYA.. WKWKWKWK.....\n");
 //        $nama = nama();
 //        $nama = "pontjo roger";
 //echo "$nama \n";
 echo color("white"," NAMA ANDA  : ");
 $nama = trim(fgets(STDIN));
-
 		   $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 echo "$email \n";
         echo color("white"," NOMOR  : ");
@@ -56,8 +55,8 @@ echo "$email \n";
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
         echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("white","CLAIM A..");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white","Pengechekan Ke 1");
+        echo "\n".color("white","tunggu ya YONG...");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
@@ -70,8 +69,8 @@ echo "$email \n";
         }else{
         echo "\n".color("white"," Message: ".$message);
 	gocar:
-        echo "\n".color("white"," CLAIM B.. ");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," PENGECEK AN KE 2");
+        echo "\n".color("white"," Tunggu ya ATKAN...");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(35);
@@ -84,8 +83,8 @@ echo "$email \n";
         }else{
         echo "\n".color("white"," Message: ".$message);
         gofood:
-        echo "\n".color("white"," CLAIM C..");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white","Pengechekan ke 3");
+        echo "\n".color("white","Tunggu ya DHALBO...");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -93,8 +92,8 @@ echo "$email \n";
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
-        echo "\n".color("white"," VOCER COLI.");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white","Pengechekan terakhir..");
+        echo "\n".color("white","Ditunggu ya...");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
