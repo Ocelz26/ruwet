@@ -5,8 +5,8 @@ ulang:
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                 BUAT YONGKY DAN SHARI         \n");
-echo color("white","                    Never Extinct         \n");
+echo color("white","                 BUAT YONGKY DAN SAHRI         \n");
+echo color("white","          NGEDORNYA JANGAN BANYAK-BANYAK YA... \n");
 echo color("white","                  Format Kode 62*** \n");
 //        $nama = nama();
 //        $nama = "pontjo roger";
