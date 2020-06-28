@@ -9,9 +9,9 @@ echo color("white","                 BUAT YONGKY DAN SHARI         \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
-echo $nama
+echo $nama;
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-echo $email
+echo $email;
         echo color("white"," NOMOR  : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
