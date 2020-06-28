@@ -9,7 +9,7 @@ echo color("white","                 BUAT YONGKY DAN SHARI         \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
-echo $nama;
+echo color("white",$nama "\n");
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 echo $email;
         echo color("white"," NOMOR  : ");
