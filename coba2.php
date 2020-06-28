@@ -9,10 +9,13 @@ echo color("white","                 BUAT YONGKY DAN SHARI         \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
 //        $nama = nama();
-        $nama = "budi wanto";
-echo "$nama \n";
+//        $nama = "pontjo roger";
+//echo "$nama \n";
+echo “MASUKAN NAMA : “;
+$input_nama = fopen(“php://stdin”,“r”);
+$nama = trim(fgets($input_nama));
 
-        $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+		   $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 echo "$email \n";
         echo color("white"," NOMOR  : ");
         // $no = trim(fgets(STDIN));
