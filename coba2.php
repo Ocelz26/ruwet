@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function2.php";
+include "function.php";
 ulang:
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
@@ -9,7 +9,9 @@ echo color("white","                 BUAT YONGKY DAN SHARI         \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
+echo $nama
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+echo $email
         echo color("white"," NOMOR  : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
