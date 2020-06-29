@@ -8,7 +8,7 @@ echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("red","    BUAT YONGKY DAN SAHRI         \n");
 echo color("white"," NGEDORNYA JANGAN BANYAK YA... \n");
 echo color("white"," INGAT TEMANNYA.. WKWKWKWK.....\n");
-echo "\n"
+echo "\n";
 echo color("white"," NAMA ANDA  : ");
 $nama = trim(fgets(STDIN));
 //        $nama = nama();
