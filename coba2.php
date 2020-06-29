@@ -8,12 +8,13 @@ echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("red","    BUAT YONGKY DAN SAHRI         \n");
 echo color("white"," NGEDORNYA JANGAN BANYAK YA... \n");
 echo color("white"," INGAT TEMANNYA.. WKWKWKWK.....\n");
-//        $nama = nama();
-//        $nama = "pontjo roger";
-//echo "$nama \n";
+echo "\n"
 echo color("white"," NAMA ANDA  : ");
 $nama = trim(fgets(STDIN));
-		   $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+//        $nama = nama();
+//        $nama = "pontjo roger";
+//echo "$nama \n"
+$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 echo "$email \n";
         echo color("white"," NOMOR  : ");
         // $no = trim(fgets(STDIN));
@@ -172,7 +173,7 @@ echo "$email \n";
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("white","SETPIN..!!!: y/n ");
+         echo "\n".color("white","INGIN SET PIN..!!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
