@@ -41,7 +41,7 @@ echo "$email \n";
     }
 $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
 $register = request("/v5/customers", null, $data);
-   //
+   //;
    echo color("white"," "$register \n");
 
 if(strpos($register, '"otp_token"')){
@@ -51,7 +51,7 @@ if(strpos($register, '"otp_token"')){
    echo color("white"," Otp : ");
    $otp = trim(fgets(STDIN));
    $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
-   //
+   //;
    echo color("white"," $data1 \n");
    
    $verif = request("/v5/customers/phone/verify", null, $data1);
