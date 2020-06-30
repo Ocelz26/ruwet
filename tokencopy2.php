@@ -27,8 +27,8 @@ function change(){
       if(strpos($verif, '"access_token"')){
          echo color("green","+] Berhasil mendaftar");
          
-         \\
-         \\ $token = getStr('"access_token":"','"',$verif);
+         //
+         // $token = getStr('"access_token":"','"',$verif);
          
          $token = "b8104672-a3e3-4979-b390-94f8ebf6a2d8"
          $uuid = getStr('"resource_owner_id":',',',$verif);
