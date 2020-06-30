@@ -4,11 +4,23 @@ include "function.php";
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("yellow","[•] Time : ".date('[d-m-Y] [H:i:s]')." \n");
 echo color("yellow","[•] waiting proses..... \n");
-echo color("yellow","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
-echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
-function change(){
-$nama = nama();
+//echo color("yellow","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
+//echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
+//function change(){
+//$nama = nama();
+//$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+
+echo color("red","    BUAT YONGKY DAN SAHRI         \n");
+echo color("white"," NGEDORNYA JANGAN BANYAK YA... \n");
+echo color("white"," INGAT TEMANNYA.. WKWKWKWK.....\n");
+echo "\n";
+echo color("white"," NAMA ANDA  : ");
+$nama = trim(fgets(STDIN));
+//        $nama = nama();
+//        $nama = "pontjo roger";
+//echo "$nama \n"
 $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+echo "$email \n";
 ulang:
 echo color("nevy","(•) Nomor : ");
 $no = trim(fgets(STDIN));
