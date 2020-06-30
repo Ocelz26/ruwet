@@ -39,6 +39,7 @@ echo "$email \n";
             $hp = '1'.substr(trim($nohp),0,13);
         }
     }
+ulang:
 
 $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
 $register = request("/v5/customers", null, $data);
@@ -48,6 +49,7 @@ echo color("green","+] Kode verifikasi sudah di kirim")."\n";
 otp:
 echo color("nevy","?] Otp: ");
 $otp = trim(fgets(STDIN));
+
 $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
 $verif = request("/v5/customers/phone/verify", null, $data1);
 if(strpos($verif, '"access_token"')){
