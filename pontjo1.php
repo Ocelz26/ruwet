@@ -41,8 +41,8 @@ echo "$email \n";
     }
 $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
 $register = request("/v5/customers", null, $data);
-   //;
-   echo color("white"," "$register \n");
+   //
+   echo color("white", "$register \n");
 
 if(strpos($register, '"otp_token"')){
    $otptoken = getStr('"otp_token":"','"',$register);
