@@ -39,7 +39,6 @@ echo "$email \n";
             $hp = '1'.substr(trim($nohp),0,13);
         }
     }
-ulang:
 
 $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
 $register = request("/v5/customers", null, $data);
