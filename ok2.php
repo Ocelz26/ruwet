@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-ulang:
+
 // function change(){
 echo color("red","                    BANDIT VOCER\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
