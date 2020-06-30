@@ -1,4 +1,47 @@
+<?php
+date_default_timezone_set('Asia/Jakarta');
+include "function.php";
+ulang:
+// function change(){
+echo color("red","                    BANDIT VOCER\n");
+echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("red","    BUAT YONGKY DAN SAHRI         \n");
+echo color("white"," NGEDORNYA JANGAN BANYAK YA... \n");
+echo color("white"," INGAT TEMANNYA.. WKWKWKWK.....\n");
+echo "\n";
+echo color("white"," NAMA ANDA  : ");
+$nama = trim(fgets(STDIN));
+//        $nama = nama();
+//        $nama = "pontjo roger";
+//echo "$nama \n"
+$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+echo "$email \n";
+        echo color("white"," NOMOR  : ");
+        // $no = trim(fgets(STDIN));
+        $nohp = trim(fgets(STDIN));
+        $nohp = str_replace("62","62",$nohp);
+        $nohp = str_replace("(","",$nohp);
+        $nohp = str_replace(")","",$nohp);
+        $nohp = str_replace("-","",$nohp);
+        $nohp = str_replace(" ","",$nohp);
 
+        if (!preg_match('/[^+0-9]/', trim($nohp))) {
+            if (substr(trim($nohp),0,3)=='62') {
+                $hp = trim($nohp);
+            }
+            else if (substr(trim($nohp),0,1)=='0') {
+                $hp = '62'.substr(trim($nohp),1);
+        }
+         elseif(substr(trim($nohp), 0, 2)=='62'){
+            $hp = '6'.substr(trim($nohp), 1);
+        }
+        else{
+            $hp = '1'.substr(trim($nohp),0,13);
+        }
+    }
+ulang:
+
+$data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
 $register = request("/v5/customers", null, $data);
 if(strpos($register, '"otp_token"')){
 $otptoken = getStr('"otp_token":"','"',$register);
