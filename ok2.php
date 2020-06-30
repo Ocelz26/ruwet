@@ -132,6 +132,5 @@ echo "\n==============Register==============\n";
 goto ulang;
 }
 }
-}
 echo change()."\n"; ?>
  
